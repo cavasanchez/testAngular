@@ -1,12 +1,13 @@
+<div class="row">
+  <div class="col-md-6">
+    <ul class="heroes">
+      <li *ngFor="let party of parties">
+        <span (click)="onSelect(party)">{{party.name}}</span>
+      </li>
+    </ul>
+  </div>
 
-<div class="col-md-6">
-  <ul class="heroes">
-    <li *ngFor="let party of parties">
-      <span (click)="onSelect(party)">{{party.name}}</span>
-    </li>
-  </ul>
-</div>
-
-<div class="col-md-6">
-  <app-detail-party [party]="selectedParty"></app-detail-party>
+  <div class="col-md-6">
+    <app-detail-party [party]="selectedParty"></app-detail-party>
+  </div>
 </div>

@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { PartiesComponent } from './parties/parties.component';
 import { DetailPartyComponent } from './detail-party/detail-party.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +18,12 @@ import { DetailPartyComponent } from './detail-party/detail-party.component';
     FooterComponent,
     HeaderComponent,
     PartiesComponent,
-    DetailPartyComponent
+    DetailPartyComponent,
+    DashboardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
